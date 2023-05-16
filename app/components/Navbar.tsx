@@ -48,7 +48,7 @@ export default function Navbar() {
             >
               manage content <AiOutlineCaretDown />
               {isDropdownOpen && (
-                <div className="w-36 h-fit bg-white shadow-sm shadow-black py-12 pl-2 rounded-lg flex flex-col items-start gap-4 top-[2rem] left-0 absolute transition duration-500 ease-linear">
+                <div className="w-fit h-fit bg-white shadow-sm shadow-black p-4 rounded-lg flex flex-col items-start gap-4 top-[2rem] left-0 absolute transition duration-500 ease-linear">
                   <Link href="/categories">categories</Link>
                   <Link href="/project">projects</Link>
                 </div>
@@ -57,7 +57,7 @@ export default function Navbar() {
             <li className="font-bold capitalize md:cursor-pointer">
               <Link href="/database">view Existing database</Link>
             </li>
-            <button className="w-40 h-[2.5rem] grid place-items-center py-2 px-4 capitalize text-white bg-cyan-600 rounded-lg hover:text-black hover:bg-transparent hover:border hover:border-cyan-600 hover:transition-all hover:duration-500 hover:ease-in-out">
+            <button className="w-40 h-[2.5rem] grid place-items-center py-2 px-4 capitalize text-white bg-blue-600 rounded-lg hover:text-black hover:bg-transparent hover:border hover:border-blue-600 hover:transition-all hover:duration-500 hover:ease-in-out">
               get started
             </button>
           </ul>
