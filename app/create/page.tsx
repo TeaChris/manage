@@ -5,7 +5,6 @@ import CreateHeader from '../components/CreateHeader'
 export default function Create() {
   return (
     <main>
-      <Navbar />
       <CreateHeader />
       <Footer />
     </main>

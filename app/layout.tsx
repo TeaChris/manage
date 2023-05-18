@@ -1,6 +1,9 @@
-import { CategoryProvider } from './context/store'
+import { CategoryProvider, FormDataProvider } from './context/store'
 import './globals.css'
 import { Inter } from 'next/font/google'
+
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <CategoryProvider>{children}</CategoryProvider>
+        <CategoryProvider>
+          <FormDataProvider>
+            <Navbar/>
+            {children}
+            <Footer/>
+          </FormDataProvider>
+        </CategoryProvider>
       </body>
     </html>
   )

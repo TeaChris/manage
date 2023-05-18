@@ -40,9 +40,9 @@ export default function CategoriesHeader() {
               return (
                 <div
                   key={category.id}
-                  className="w-full h-fit p-2 bg-blue-100 rounded-md flex items-center justify-between"
+                  className="w-full h-fit p-2 bg-blue-100 rounded-md flex items-center justify-between hover:skew-y-12 transition duration-500 cursor-pointer"
                 >
-                  <span className='capitalize'>{category.name}</span>
+                  <span className="capitalize">{category.name}</span>
                   <div className="flex items-center gap-4">
                     <BiEdit
                       style={{
