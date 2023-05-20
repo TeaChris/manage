@@ -30,8 +30,8 @@ export default function CategoriesHeader() {
     <header className="w-full h-fit p-8 mt-16 grid place-items-center relative">
       <div className="md:w-[50rem] flex flex-col items-start gap-6">
         {/* top */}
-        <div className="w-full p-4 flex items-center justify-between">
-          <h2 className="capitalize text-[2rem] font-semibold">
+        <div className="w-full p-4 flex flex-col md:flex md:flex-row items-center gap-8 md:justify-between">
+          <h2 className="capitalize text-[1.5rem] md:text-[2rem] font-semibold">
             project categories
           </h2>
           <Link
@@ -45,7 +45,7 @@ export default function CategoriesHeader() {
 
         {/* bottom */}
         <div className="w-full flex flex-col items-start gap-1">
-          <div className="w-[85%] md:flex md:items-center justify-between">
+          <div className="w-full md:w-[85%] flex md:flex md:items-center justify-between">
             <p className="capitalize font-normal">category name</p>
             <p className="capitalize font-normal">actions</p>
           </div>
@@ -63,6 +63,7 @@ export default function CategoriesHeader() {
                       type="button"
                       onClick={handleEdit}
                       value={category.id}
+                      className="hidden"
                     >
                       <BiEdit
                         style={{

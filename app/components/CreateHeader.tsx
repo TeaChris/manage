@@ -31,11 +31,13 @@ export default function CreateHeader() {
   }
 
   return (
-    <section className="w-full h-fit grid place-items-center my-16">
-      <div className="w-[40rem] h-64 p-8 rounded-xl bg-white shadow-md shadow-black flex flex-col items-center gap-3">
-        <h2 className="text-2xl capitalize font-medium">create new category</h2>
+    <section className="w-full mx-auto h-fit grid place-items-center my-16">
+      <div className="w-[15rem] md:w-[40rem] h-[15rem] md:h-64 p-8 rounded-xl bg-white shadow-md shadow-black flex flex-col items-start md:items-center gap-3">
+        <h2 className="text-[1rem] md:text-2xl capitalize font-medium">
+          create new category
+        </h2>
         <form
-          className="w-full px-4 flex flex-col items-start gap-3"
+          className="w-full px-4 flex flex-col items-center md:items-start gap-3 mt-8 md:mt-0"
           onSubmit={handleSubmit}
         >
           <label htmlFor="category" className="capitalize text-sm">
