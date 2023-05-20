@@ -44,7 +44,7 @@ export default function ProjectHeader() {
                 return (
                   <div
                     key={entry.id}
-                    className="w-full h-fit p-2 bg-blue-100 rounded-md flex items-start justify-between hover:skew-x-12 transition duration-500 cursor-pointer"
+                    className="w-full h-fit p-2 bg-blue-100 rounded-md flex items-start justify-between hover:scale-95 transition ease-in-out duration-200 cursor-pointer"
                   >
                     <div className="w-fit flex items-center gap-6">
                       <span>{entry.id}</span>

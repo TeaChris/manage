@@ -6,7 +6,6 @@ export default function Create() {
   return (
     <main>
       <CreateHeader />
-      <Footer />
     </main>
   )
 }

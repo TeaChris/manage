@@ -11,6 +11,8 @@ type Category = {
 type CategoryContextType = {
   categories: Category[]
   addCategory: (name: string) => void
+  deleteCategory: (id: number) => void
+  editCategory: (id: number, name: string) => void
 }
 
 type FormDataEntry = {
@@ -57,6 +59,7 @@ export const CategoryProvider: React.FC<CategoryProviderProps> = ({
 }) => {
   const [categories, setCategories] = useState<Category[]>([])
 
+  // adding category to the list
   const addCategory = (name: string) => {
     const newCategory: Category = {
       id: categories.length + 1,
@@ -65,8 +68,26 @@ export const CategoryProvider: React.FC<CategoryProviderProps> = ({
     setCategories((prevCategories) => [...prevCategories, newCategory])
   }
 
+  // delete category from the list
+  const deleteCategory = (id: number) => {
+    const updatedCategories = categories.filter(
+      (category) => category.id !== id
+    )
+    setCategories(updatedCategories)
+  }
+
+  // edit category in the list
+  const editCategory = (id: number, name: string) => {
+    const updatedCategories = categories.map((category) =>
+      category.id == id ? { ...category, name: name } : category
+    )
+    setCategories(updatedCategories)
+  }
+
   return (
-    <CategoryContext.Provider value={{ categories, addCategory }}>
+    <CategoryContext.Provider
+      value={{ categories, addCategory, deleteCategory, editCategory }}
+    >
       {children}
     </CategoryContext.Provider>
   )

@@ -35,13 +35,13 @@ export default function HomeHeader() {
   return (
     <section className="w-full h-fit py-3">
       <div className="w-full h-fit container mx-auto flex flex-col items-center gap-4 pt-20">
-        <h1 className="font-bold text-[2.5rem] md:text-[4rem] text-center capitalize leading-2">
+        <h1 className="font-bold text-[2rem] md:text-[4rem] text-center capitalize leading-2">
           an end to final year project topic repitition
         </h1>
         <p className="text-sm">
           Solve the world problem through your final year project
         </p>
-        <div className="w-full flex items-center bg-blue-100 py-3 px-4 rounded-md text-black mt-5">
+        <div className="w-full flex items-center bg-blue-100 py-3 px-4 rounded-md text-black mt-5 sm:mx-2">
           <BsSearch style={{ color: 'lightblue', fontSize: '1.5rem' }} />
           <input
             type="text"
@@ -53,7 +53,7 @@ export default function HomeHeader() {
           />
         </div>
         <div className="w-full h-fit flex flex-col items-start gap-12 mt-20">
-          <h1 className="text-[2rem] capitalize">
+          <h1 className="text-[1.5rem] pl-4 md:text-[2rem] capitalize">
             explore your recent project topic
           </h1>
           <div className="w-full h-fit grid grid-cols-3 items-center justify-between">

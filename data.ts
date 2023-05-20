@@ -10,7 +10,7 @@ export const companyLinks: CompanyLink[] = [
   { id: 2, title: 'out team', url: '/' },
   { id: 3, title: 'press', url: '/' },
   { id: 4, title: 'trends', url: '/' },
-  { id: 4, title: 'careers', url: '/' },
+  { id: 5, title: 'careers', url: '/' },
 ]
 
 // footer support links

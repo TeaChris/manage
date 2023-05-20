@@ -5,9 +5,7 @@ import ProjectHeader from '../components/ProjectHeader'
 export default function Projects() {
   return (
     <main>
-      
       <ProjectHeader />
-      <Footer />
     </main>
   )
 }
